@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Nikita Romasko](https://up.htmlacademy.ru/htmlcss/20/user/596719).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Власов] ( https://htmlacademy.ru/profile/amaringo ).
 
 ---
 
