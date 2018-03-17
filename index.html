@@ -246,6 +246,48 @@
       <span>htmlacademy.ru</span>
     </div>
   </footer>
+
+  <section class="modal-product-in-cart">
+      <form class="product-in-cart" method="get" action="https://echo.htmlacademy.ru">
+        <p>Товар добавлен в корзину!</p>
+        <div class="footer-product-in-cart">
+          <a class="button-product-in-cart-order" href="#">Оформить заказ</a>
+          <a class="button-product-in-cart-continue-buying" href="#">Продолжить покупки</a>
+        </div>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+  <section class="modal-write-us">
+    <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
+      <p>
+        <label class="write-us-name" for="write-us-name">Ваше имя:</label>
+        <input id="write-us-name" type="text" name="write-us-name" placeholder="Представьтесь, пожалуйста">
+      </p>
+      <p>
+        <label class="write-us-email" for="write-us-email">Ваш email:</label>
+        <input id="write-us-email" type="email" name="write-us-email" placeholder="Для отправки ответа">
+      </p>
+      <p>
+        <label for="write-us-message">Текст письма:</label>
+      </p>
+      <p>
+        <textarea name="write-us-message" id="write-us-message" cols="30" rows="10">В свободной форме</textarea>
+      </p>
+      <div class="footer-write-us">
+        <button class="write-us-button" type="submit">Отправить</button>
+      </div>
+    </form>
+    <button class="write-us-close" type="button">Закрыть</button>
+  </section>
+
+  <section class="modal-map">
+    <a class="img-modal-map" href="#">
+		<img src="img/modal-map.jpg" width="940" height="466" alt="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
+	  </a>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
 </body>
 
 </html>
