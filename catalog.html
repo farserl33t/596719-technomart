@@ -54,9 +54,60 @@
       <h2>Перфораторы</h2>
     </div>
 
-    <section class="filter">
-      <!-- Форма -->
-      <a class="button" href="#">Показать</a>
+    <section class="filters">
+      <h3 class="filter">Фильтр:</h3>
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Цена:</legend>
+          <label for="price-range" class="visually-hidden">Диапазон цены</label>
+          <input class="range-style" type="range" name="price-range" id="price-range" min="0" max="30000" step="5000">
+          <p>
+            <label for="min-price" class="visually-hidden">Минимальная цена</label>
+            <input type="text" name="min-price" id="min-price" class="min-max-price"> -
+            <label for="max-price" class="visually-hidden">Максимальная цена</label>
+            <input type="text" name="max-price" id="max-price" class="min-max-price">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Прозводители:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+              <label for="filter-bosch">Bosch</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+              <label for="filter-interskol">Интерскол</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+              <label for="filter-makita">Makita</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+              <label for="filter-dewalt">Dewalt</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+              <label for="filter-hitachi">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input filter-input-radio" type="radio" name="supply-type" value="accumulators" id="filter-accumulators" checked>
+              <label for="filter-accumulators">Аккумуляторные</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-radio" type="radio" name="supply-type" value="line-supply" id="filter-line-supply" disabled>
+              <label for="filter-line-supply">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button">Показать</button>
+      </form>
     </section>
 
     <div class="sorting">
@@ -162,15 +213,15 @@
         <li class="pagination-current">1</li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a class="button" href="#">Следующая</a></li>
+        <li class="pagination-item"><a class="btn next" href="#">Следующая</a></li>
       </ul>
     </section>
 
     <div class="about-perforator">
       <h3>Пара слов о перфораторах</h3>
       <p>
-        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
-        шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта
+        и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
       </p>
     </div>
   </main>
@@ -226,15 +277,15 @@
   </footer>
 
   <section class="modal-product-in-cart">
-      <form class="product-in-cart" method="get" action="https://echo.htmlacademy.ru">
-        <p>Товар добавлен в корзину!</p>
-        <div class="footer-product-in-cart">
-          <a class="button-product-in-cart-order" href="#">Оформить заказ</a>
-          <a class="button-product-in-cart-continue-buying" href="#">Продолжить покупки</a>
-        </div>
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
+    <form class="product-in-cart" method="get" action="https://echo.htmlacademy.ru">
+      <p>Товар добавлен в корзину!</p>
+      <div class="footer-product-in-cart">
+        <a class="button-product-in-cart-order" href="#">Оформить заказ</a>
+        <a class="button-product-in-cart-continue-buying" href="#">Продолжить покупки</a>
+      </div>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 
 </body>
 
