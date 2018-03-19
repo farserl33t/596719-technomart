@@ -12,7 +12,10 @@
       <div class="header-logo">
         <h1 class="visually-hidden">Техномарт</h1>
       </div>
-      <a href="#">Поиск</a>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="search">Поиск</label>
+        <input type="search" name="search" id="search" placeholder="Поиск:">
+      </form>
       <a href="#">Закладки: 0</a>
       <a href="#">Корзина: 0</a>
       <a href="#">Оформить заказ</a>
@@ -248,15 +251,15 @@
   </footer>
 
   <section class="modal modal-product-in-cart">
-      <form class="product-in-cart" method="get" action="https://echo.htmlacademy.ru">
-        <p>Товар добавлен в корзину!</p>
-        <div class="footer-product-in-cart">
-          <a class="button-product-in-cart-order" href="#">Оформить заказ</a>
-          <a class="button-product-in-cart-continue-buying" href="#">Продолжить покупки</a>
-        </div>
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
+    <form class="product-in-cart" method="get" action="https://echo.htmlacademy.ru">
+      <p>Товар добавлен в корзину!</p>
+      <div class="footer-product-in-cart">
+        <a class="button-product-in-cart-order" href="#">Оформить заказ</a>
+        <a class="button-product-in-cart-continue-buying" href="#">Продолжить покупки</a>
+      </div>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 
   <section class="modal modal-write-us">
     <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
