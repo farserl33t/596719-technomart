@@ -33,6 +33,19 @@ a {
   background-color: #ba2732;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-header {
   font-family: 'Cuprum', Arial, sans-serif;
   font-weight: 400;
@@ -275,6 +288,8 @@ a {
 .new-price {
   color: #ffffff;
   background-color: #ee3643;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .catalog-position-active {
@@ -468,13 +483,11 @@ a {
   color: #ffd180;
 }
 
-.first-navigation-item:hover,
-.second-navigation-item:hover {
+.first-navigation-item:hover, .second-navigation-item:hover {
   text-decoration: underline;
 }
 
-.first-navigation-item:active,
-.second-navigation-item:active {
+.first-navigation-item:active, .second-navigation-item:active {
   opacity: 0.5;
 }
 
@@ -482,14 +495,11 @@ a {
   background-color: #293449;
 }
 
-.footer-copyright,
-.footer-feedback,
-.footer-developed {
+.footer-copyright, .footer-feedback, .footer-developed {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
-
 
 .footer-social ul {
   list-style: none;
@@ -497,21 +507,17 @@ a {
 
 .footer-social a {
   display: inline-block;
-
   width: 40px;
   height: 40px;
-
   margin-right: 10px;
   vertical-align: middle;
-
   background-color: #212a3a;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
 }
 
-.footer-social a:hover,
-.footer-social a:active {
+.footer-social a:hover, .footer-social a:active {
   background-color: #ee3643;
 }
 
@@ -527,47 +533,36 @@ a {
   background-image: url('../img/icon-insta.svg');
 }
 
-.footer-feedback a,
-.footer-developed a {
+.footer-feedback a, .footer-developed a {
   color: #ffd180;
 }
 
-.footer-feedback a:hover,
-.footer-developed a:hover {
+.footer-feedback a:hover, .footer-developed a:hover {
   text-decoration: underline;
 }
 
-.footer-feedback a:active,
-.footer-developed a:active {
+.footer-feedback a:active, .footer-developed a:active {
   color: #ee3643;
 }
 
 .modal-write-us {
   position: relative;
-
   width: 620px;
-
   margin: 0 auto;
-
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
-
   background-color: #ffffff;
   border-top: 7px solid #ff5357;
   box-shadow: 0 10px 40px 0 rgba(41, 52, 73, 0.5);
 }
 
-.modal-write-us input,
-.write-us-message {
+.modal-write-us input, .write-us-message {
   width: 218px;
-
   padding: 12px 50px 13px 17px;
-
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-
   background-color: #ffffff;
   border: 2px solid #dee3e4;
   border-radius: 3px;
@@ -576,7 +571,6 @@ a {
 .write-us-message {
   width: 458px;
   height: 114px;
-
   padding-top: 13px;
   padding-left: 17px;
 }
@@ -595,10 +589,8 @@ a {
   position: absolute;
   top: 9px;
   right: 9px;
-
   width: 21px;
   height: 21px;
-
   background-image: url('../img/form-2.svg');
   background-color: transparent;
   border: none;
@@ -606,12 +598,9 @@ a {
 
 .modal-map {
   position: relative;
-
   width: 940px;
   height: 447px;
-
   margin: 0 auto;
-
   box-shadow: 0 0 40px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -619,10 +608,291 @@ a {
   position: absolute;
   top: 9px;
   right: 9px;
-
   width: 21px;
   height: 21px;
+  background-image: url('../img/form-2.svg');
+  background-color: transparent;
+  border: none;
+}
 
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs li:first-of-type a {
+  width: 14px;
+  height: 12px;
+  display: inline-block;
+  background-image: url('../img/icon-home.svg');
+}
+
+.breadcrumbs li:not(:last-of-type)::after {
+  content: '';
+  width: 14px;
+  height: 12px;
+  display: inline-block;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-image: url('../img/icon-right-small.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog-title {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #f2f6f8;
+}
+
+.filters h3 {
+  width: 200px;
+  margin: 0;
+  padding-left: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.range-filter-controls {
+  position: relative;
+  width: 180px;
+  height: 80px;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  background-color: #f7f3ec;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.range-filter-scale {
+  margin-top: 39px;
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range-filter-bar {
+  width: 152px;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.range-filter-toggle {
+  position: absolute;
+  top: 30px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid white;
+  background: #d7dcde;
+  border-radius: 50%;
+  box-shadow: 0 1px 0 0 #d7dcde;
+  cursor: pointer;
+}
+
+.min-toggle {
+  left: 20px;
+}
+
+.max-toggle {
+  right: 40px;
+}
+
+.range-filter-price input {
+  width: 95px;
+  padding-top: 11px;
+  padding-bottom: 14px;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  border: none;
+  background: #f7f3ec;
+  border-radius: 3px;
+}
+
+.range-filter-price span {
+  margin: auto 5px;
+}
+
+.manufacturer, .power {
+  list-style: none;
+}
+
+.manufacturer-item, .power-item {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  padding: 10px 40px;
+  font-size: 13px;
+  line-height: 28px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.sorting {
+  background-color: #f7f3ec;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sorting h3 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.sorting-wrap a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-wrap .sorting-price-active {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+.sorting-wrap a:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-arrows a {
+  display: inline-block;
+}
+
+.sorting-up {
+  background-image: url('../img/icon-up-dir.svg');
+  background-repeat: no-repeat;
+}
+
+.sorting-down {
+  background-image: url('../img/icon-down-dir.svg');
+  background-repeat: no-repeat;
+}
+
+.pagination-list {
+  display: flex;
+  margin-right: 10px;
+  list-style: none;
+}
+
+.pagination-item {
+  margin-right: 10px;
+}
+
+.pagination-item a {
+  padding: 13px 15px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.pagination-item-current a {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.pagination-item a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-item a:active {
+  border: 1px solid #ee3643;
+}
+
+.about-perforators {
+  background-color: #f2f6f8;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.about-perforators h2 {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.modal-add-product {
+  position: relative;
+  width: 620px;
+  margin: 0 auto;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border-top: 7px solid #ff5357;
+  box-shadow: 0 10px 40px 0 rgba(41, 52, 73, 0.5);
+}
+
+.modal-added {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.modal-added::before {
+  content: '';
+  width: 66px;
+  height: 66px;
+  display: inline-block;
+  padding-right: 32px;
+  background-image: url('../img/form-1.svg');
+  background-repeat: no-repeat;
+}
+
+.modal-buttons {
+  background-color: #f1f1f1;
+}
+
+.modal-buttons-continue {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
   background-image: url('../img/form-2.svg');
   background-color: transparent;
   border: none;
