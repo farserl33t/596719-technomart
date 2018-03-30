@@ -313,6 +313,7 @@ input.search-input:focus::-ms-input-placeholder {
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
+  font-family: 'Cuprum', Arial, sans-serif;
 }
 
 
@@ -479,7 +480,11 @@ input.search-input:focus::-ms-input-placeholder {
   fill: #c5c5c5;
 }
 
-.header-content-client:hover svg {
+.header-content-logout:hover svg {
+  fill: #32425c;
+}
+
+.header-content-name:hover svg {
   fill: #32425c;
 }
 
@@ -519,6 +524,22 @@ input.search-input:focus::-ms-input-placeholder {
 
 .header-content-client-order {
   padding-right: 33px;
+}
+
+.header-content-client-order:hover {
+  color: #ee3643;
+}
+
+.header-content-client-order:active {
+  color: #b7bfc8;
+}
+
+.header-content-personal-area:hover {
+  color: #ee3643;
+}
+
+.header-content-personal-area:active {
+  color: #b7bfc8;
 }
 
 .header-content-client-order::after {
@@ -1269,6 +1290,7 @@ input#product-2:checked ~ .slider-item-list .slider-list-item-second {
   border-bottom: 1px solid #4e637c;
   background-color: #32425c;
 
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
 }
