@@ -95,7 +95,7 @@ input[type="radio"].visually-hidden {
 .footer-container {
   width: 960px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 9px;
 }
 
 .top-menu-container {
@@ -310,10 +310,11 @@ input.search-input:focus::-ms-input-placeholder {
 
   color: #ee3643;
 
-  font-size: 16px;
+  font-size: 15px;
   font-style: italic;
   line-height: 23px;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
+  white-space: nowrap;
 }
 
 
@@ -353,7 +354,6 @@ input.search-input:focus::-ms-input-placeholder {
 
   content: '';
 
-  opacity: 0.3;
   background-image: url('../img/icon-phone.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2184,7 +2184,6 @@ input#button-3:checked ~ .services-list .services-item-credit {
 
   margin-bottom: 20px;
   padding-top: 10px;
-  padding-right: 17px;
   padding-bottom: 10px;
   padding-left: 19px;
 
